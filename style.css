@@ -1,0 +1,7 @@
+.grid-container{
+    height: 60vh;
+    border: 4px groove bisque;
+    width: 39vw;
+    margin-right: 2em;
+    border-radius: 20px;
+}

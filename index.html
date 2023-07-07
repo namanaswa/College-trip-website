@@ -1,0 +1,228 @@
+<!-- need to edit the age input to text , tell dee to change the backend -->
+<!DOCTYPE html>
+<html lang="en">
+    <!-- will make the header sticky and add a border below it -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIP PLANNER</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap" rel="stylesheet">
+    <!-- saavan aya jhoom ke hum jyenge ghoom ne! -->
+    <!--trip ki ticket haath main padha karenge baad main-->
+<style>
+    /* CSS Reset */
+    body{
+         margin: 0px;
+         padding: 0px;
+         /* background: url('img/fitness_photo_1.jpg'); */
+         background: url('img/pexels-elena-zhuravleva-1457812.jpg');
+        color: white;
+        font-family: 'Baloo Bhai 2', cursive;
+        background-size: cover;
+    }
+    .header{
+        height: 120px;
+        background-color: rgba(0, 0, 0, 0.53);
+    }
+    .left{
+            display: inline-block;
+            /* border: 2px solid red; */
+            position: absolute;
+            left: 45px;
+             top: 13px;
+
+    }
+    
+    .left img{
+        width: 80px;
+        filter: invert(100%);
+        padding: 10px 25px;
+    }
+
+    .left div{
+        line-height: 5px;
+        font-size: 25px;
+        text-align: center;
+
+    }
+div{
+    display: block;
+}
+    .mid{
+        display: block;
+        width: 25%;
+        padding: 25px 10px;
+        margin: 20px auto;
+        /* border: 2px solid greenyellow; */
+    }
+    .right{
+        position: absolute;
+        right: 34px;
+        top: 31px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+    .navbar{
+        display: inline-block;
+    }
+
+    .navbar li{
+        display: inline-block;
+        font-size: 19px;
+
+    }
+    .navbar li a{
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        padding: 34px 23px;
+
+    }
+    .navbar li a:hover, .navbar li a.active{
+       text-decoration: underline;
+        color: #dfcdc3;
+    }
+
+    .btn{
+        font-family: 'Baloo Bhai 2', cursive;
+        margin: 25px 9px;
+        color: white;
+        background-color: black;
+        padding: 4px 14px;
+        border: 2px solid #e8c7b5;
+        border-radius: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        
+    }
+    
+    .btn:hover{
+        background-color: rgb(120, 111, 111);
+    }
+
+.container{
+    border: 4px solid #ffffff;
+  margin: 31px 45px;
+  padding: 7px 27px;
+  width: 33%;
+  border-radius: 16px;
+  height: 640px;
+}
+.form-group input{
+
+    font-family: 'Baloo Bhai 2', cursive;
+    text-align: center;
+    display: block;
+    border: 3px solid black;
+    margin: 11px auto;
+    padding: 10px 90px;
+    width: 57%;
+    border-radius: 19px;
+    font-size: 24px;
+    /* background-color: #c07726;  */
+    background-color: #cff0f5; 
+    /* background-color: #e9ed0a90;  */
+    /* to change the colour of the input box ^(bgcolour) */
+}
+::placeholder{
+    color: rgb(0, 0, 0);
+}
+.container h1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.container button{
+    display: block;
+width: 88%;
+margin: 30px auto;
+background-color: #d8cec8;
+color: black;
+border-color: black;
+}
+.container button:hover{
+        background-color: #cff0f5;
+    }
+
+</style>
+</head>
+<body>
+<header class="header">
+    <!-- left box for logo -->
+    <div class="left">
+       <img src="img/GGSIU_logo.svg.png" alt="">
+       <div>TRIP PLANNER</div>
+    </div>
+    <!-- mid box for navbar -->
+    <div class="mid">
+        <ul class="navbar">
+            <li><a href="index.html" class="active" >Home</a> </li>
+            <li><a href="About_us.html" >About Us</a></li>
+            <!-- <li><a href="#">Fitness Calculator</a></li>
+            <li><a href="#">Contact Us</a></li> -->
+        </ul>
+    </div>
+    <!-- right box for buttons -->
+    <div class="right">
+
+        <button class="btn">Call Us Now</button>
+        <button class="btn">Email Us</button>
+
+    </div>
+</header>
+
+<div class="container">
+    <h1>Join to get the best trip of the year</h1>
+
+    <!-- <form action="noaction.php">
+        <div class="form-group">
+            <input type="text" name="" id="" placeholder="Enter your Name">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" id="" placeholder="Enter your Age">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" id="" placeholder="Enter your Gender">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" id="" placeholder="Enter your Locality">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" id="" placeholder="Enter your Phone Number">
+        </div>
+        <div class="form-group">
+            <input type="text" name="" id="" placeholder="Enter your Email">
+        </div>
+        <button class="btn">Submit</button>
+    </form> -->
+    <form action="sign_up" method="post">
+        <div class="form-group">
+            <input type="text" name="name" id="name" placeholder="Enter your Name">
+        </div>
+        <div class="form-group">
+            <input type="number" name="age" id="age" placeholder="Enter your Age">
+        </div>
+        <div class="form-group">
+            <input type="text" name="gender" id="gender" placeholder="Enter your Gender">
+        </div>
+        <div class="form-group">
+            <input type="text" name="locality" id="locality" placeholder="Enter your College Name">
+        </div>
+        <div class="form-group">
+            <input type="text" name="phone" id="phone" placeholder="Enter your Phone Number">
+        </div>
+        <div class="form-group">
+            <input type="text" name="email" id="email" placeholder="Enter your Email">
+        </div>
+        <button class="btn">Submit</button>
+    </form>
+
+
+    
+</div>
+
+
+    
+</body>
+</html>
