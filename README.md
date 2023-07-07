@@ -1,1 +1,1 @@
-# Trippy
+# College trip website
